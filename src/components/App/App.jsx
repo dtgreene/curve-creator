@@ -102,7 +102,7 @@ export const App = () => {
         // values that are part of the fields object
         setFields(
           produce((draft) => {
-            // the reference properties are nested 
+            // the reference properties are nested
             if (json.reference !== undefined) {
               draft.referenceOpacity = json.reference.opacity;
               draft.referenceColor = json.reference.color;
@@ -117,7 +117,7 @@ export const App = () => {
               'mainColor',
               'controlColor',
               'originColor',
-              'outputPrecision'
+              'outputPrecision',
             ].forEach((key) => {
               if (json[key] !== undefined) {
                 // set field, all fields should be string values
@@ -468,15 +468,13 @@ export const App = () => {
               />
             </div>
           </div>
-          <div className="flex gap-4">
-            <div>
-              <Label>Origin Color</Label>
-              <TextInput
-                value={fields.originColor}
-                onChange={(event) => handleFieldChange('originColor', event)}
-                sizing="sm"
-              />
-            </div>
+          <div>
+            <Label>Origin Color</Label>
+            <TextInput
+              value={fields.originColor}
+              onChange={(event) => handleFieldChange('originColor', event)}
+              sizing="sm"
+            />
           </div>
         </div>
         <div className="mb-8">
