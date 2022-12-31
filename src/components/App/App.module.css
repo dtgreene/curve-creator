@@ -1,0 +1,4 @@
+.sidebar {
+  min-width: 500px;
+  @apply p-8 overflow-y-auto;
+}
