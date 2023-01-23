@@ -4,6 +4,7 @@ A tool for tracing images with Bezier curves that can be exported in various for
 
 https://dtgreene.github.io/curve-creator/dist/
 
+<div>
 <table width="100%">
   <thead>
     <tr style="border-bottom: 1px solid #555">
@@ -18,3 +19,4 @@ https://dtgreene.github.io/curve-creator/dist/
     </tr>
   </tbody>
 </table>
+</div>
